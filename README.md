@@ -10,7 +10,7 @@ This repository is a showcase. The code is private because the product holds wal
 
 - **Find tokens.** Pulse lists new pairs and trending tokens with filters by liquidity, market cap and launchpad. Each row shows the launchpad, fees and bundle flags at a glance.
 - **Read a token.** The token page has the chart, trades, holders, top traders and key addresses in one view.
-- **Act on signals.** A live feed carries launch, bundle and tracked-wallet alerts. Each one leads to a one-tap buy, so the trader doesn't have to leave the page.
+- **Get early signals.** The feed is fed by watchers I run that follow project websites and blogs, exchange listings, X accounts and on-chain contract changes: new launchpad deployments, redeployed contracts and new RPC endpoints. Each alert carries a severity tag and leads to a one-tap buy.
 - **Track wallets.** Follow wallets and see their trades as they happen, with buy and sell signals, PnL on exits and a quick-buy row.
 - **Follow X accounts.** An X tracker groups accounts into folders and shows a timeline of posts, retweets, follows and deletions, so news reaches the trader next to the trades.
 - **Spot bundles.** A tool lists tokens where a group of wallets bought a large share at launch. Opening one draws a graph of who funded whom, who still holds, who is selling and who has sold. It also states that funding links are evidence of a common source and not proof of ownership.
