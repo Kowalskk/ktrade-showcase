@@ -11,10 +11,15 @@ This repository is a showcase. The code is private because the product holds wal
 - **Find tokens.** Pulse lists new pairs and trending tokens with filters by liquidity, market cap and launchpad. Each row shows the launchpad, fees and bundle flags at a glance.
 - **Read a token.** The token page has the chart, trades, holders, top traders and key addresses in one view.
 - **Act on signals.** A live feed carries launch, bundle and tracked-wallet alerts. Each one leads to a one-tap buy, so the trader doesn't have to leave the page.
-- **Track wallets.** Follow wallets and see their trades as they happen.
-- **Manage positions.** A portfolio with custodial wallets, a bridge from HyperEVM and an exchange view.
+- **Track wallets.** Follow wallets and see their trades as they happen, with buy and sell signals, PnL on exits and a quick-buy row.
+- **Spot bundles.** A tool lists tokens where a group of wallets bought a large share at launch, how much they still hold and how much has moved.
+- **Manage positions.** A portfolio with custodial wallets, a bridge from HyperEVM and an exchange view. It is only visible to the owner, so there is no screenshot here.
 
 ![Token page](img/token.png)
+
+![Trackers](img/trackers.png)
+
+![Bundle detector](img/tools-bundles.png)
 
 ## Product decisions
 
