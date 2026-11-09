@@ -1,0 +1,28 @@
+# Ktrade
+
+A web trading terminal for Elysium, the HyperEVM L2. I designed it, built it and run it. It has been live with real trading for a small group of trusted users since November 2026.
+
+This repository is a showcase. The code is private because the product holds wallet custody. A read-only guest demo is available on request.
+
+![Pulse](img/pulse.png)
+
+## What a trader can do
+
+- **Find tokens.** Pulse lists new pairs and trending tokens with filters by liquidity, market cap and launchpad. Each row shows the launchpad, fees and bundle flags at a glance.
+- **Read a token.** The token page has the chart, trades, holders, top traders and key addresses in one view.
+- **Act on signals.** A live feed carries launch, bundle and tracked-wallet alerts. Each one leads to a one-tap buy, so the trader doesn't have to leave the page.
+- **Track wallets.** Follow wallets and see their trades as they happen.
+- **Manage positions.** A portfolio with custodial wallets, a bridge from HyperEVM and an exchange view.
+
+![Token page](img/token.png)
+
+## Product decisions
+
+- **Phased rollout.** Read-only first, then paper trading, then real execution for one user with limits, then more venues one at a time.
+- **Safety before speed.** Every order is simulated on-chain before it is sent. Spending caps per order and per day, a kill switch, and a closed list of supported venues. A new venue only goes live after a simulation pass, a security review and a small real trade.
+- **Speed where it matters.** I measured the order-submission path across several RPC routes and switched to the fastest, cutting send time from roughly 7-20 seconds to 1-2 seconds.
+- **Showing the product safely.** A read-only guest mode lets partners use the live terminal without any trading access.
+
+## How it's built
+
+TypeScript monorepo: a Fastify API with SQLite and a Next.js web app, deployed with Docker behind a Cloudflare tunnel. Market data comes from an indexer that reads the chain and from alert feeds I run separately.
