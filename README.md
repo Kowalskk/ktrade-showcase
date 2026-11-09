@@ -1,6 +1,6 @@
 # Ktrade
 
-A web trading terminal for Elysium, the HyperEVM L2. I designed it, built it and run it. It has been live with real trading for a small group of trusted users since November 2026.
+A web trading terminal for Elysium, the HyperEVM L2. I designed it, built it and run it. It has been live with real trading since November 2026. I use it daily, and partners can try it through a read-only guest mode.
 
 This repository is a showcase. The code is private because the product holds wallet custody. A read-only guest demo is available on request.
 
@@ -27,7 +27,7 @@ This repository is a showcase. The code is private because the product holds wal
 ## Product decisions
 
 - **Phased rollout.** Read-only first, then paper trading, then real execution for one user with limits, then more venues one at a time.
-- **Safety before speed.** Every order is simulated on-chain before it is sent. Spending caps per order and per day, a kill switch, and a closed list of supported venues. A new venue only goes live after a simulation pass, a security review and a small real trade.
+- **Safety before speed.** Every order is simulated on-chain before it is sent. Spending caps per order and per day, a kill switch, and a closed list of supported venues. New venues are built switched off, validated in simulation and reviewed, and only then turned on for a small real test.
 - **Speed where it matters.** I measured the order-submission path across several RPC routes and switched to the fastest, cutting send time from roughly 7-20 seconds to 1-2 seconds.
 - **Showing the product safely.** A read-only guest mode lets partners use the live terminal without any trading access.
 
