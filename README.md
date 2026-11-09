@@ -12,14 +12,17 @@ This repository is a showcase. The code is private because the product holds wal
 - **Read a token.** The token page has the chart, trades, holders, top traders and key addresses in one view.
 - **Act on signals.** A live feed carries launch, bundle and tracked-wallet alerts. Each one leads to a one-tap buy, so the trader doesn't have to leave the page.
 - **Track wallets.** Follow wallets and see their trades as they happen, with buy and sell signals, PnL on exits and a quick-buy row.
-- **Spot bundles.** A tool lists tokens where a group of wallets bought a large share at launch, how much they still hold and how much has moved.
+- **Follow X accounts.** An X tracker groups accounts into folders and shows a timeline of posts, retweets, follows and deletions, so news reaches the trader next to the trades.
+- **Spot bundles.** A tool lists tokens where a group of wallets bought a large share at launch. Opening one draws a graph of who funded whom, who still holds, who is selling and who has sold. It also states that funding links are evidence of a common source and not proof of ownership.
 - **Manage positions.** A portfolio with custodial wallets, a bridge from HyperEVM and an exchange view. It is only visible to the owner, so there is no screenshot here.
 
 ![Token page](img/token.png)
 
 ![Trackers](img/trackers.png)
 
-![Bundle detector](img/tools-bundles.png)
+![X tracker timeline](img/xtracker.png)
+
+![Bundle graph](img/tools-bundles.png)
 
 ## Product decisions
 
